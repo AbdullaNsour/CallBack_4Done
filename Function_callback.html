@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+    <style>
+        body {
+            background-color: rgb(62, 62, 62);
+            color: rgb(216, 216, 216);
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            background-color: rgb(40, 40, 40);
+            grid-gap: 15px;
+            padding: 15px;
+            margin: 5px;
+            border: solid 1px;
+            font-size: large;
+        }
+
+        span{
+            color: gold;
+        }
+        @media (max-width: 950px) {.grid{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }}
+        @media (max-width: 800px) {.grid{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }}
+        @media (max-width: 500px) {.grid{
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }}
+    </style>
+</head>
+
+<body>
+    <h1>CallBack Task</h1>
+    <div class="grid">
+        <p> 1- Create a function called <span>sum</span>  that takes a single parameter n,
+            and return the sum of all integers up to n starting from 0
+            <br>
+            Ex: sum(2); => 2 + 1 + 0 => 3
+            <br>
+            Ex: sum(5); => 5 + 4 + 3 + 2 + 1 + 0 => 15</p>
+
+
+        <p> 2- Create a function called <span>factorial</span>
+            that takes a single parameter n,
+            and return the product of all integers up to n starting from 1
+<br>
+            Ex: factorial(3); =>3* 2 * 1 => 6
+            <br>
+            Ex: factorial(4); => 4 * 3 * 2 * 1 => 24</p>
+
+
+        <p> 3- Create a function called <span>repeatStr</span>
+            that takes 2 parameters string and number,
+            and return the string number time with space
+            Important: the stop condition should be [somthing=== 0]
+            Think how we can return nothing ???
+            Important: You should dint have extra space at the end
+            <br>
+            Ex: repeatStr("to",2); => "to to"
+            <br>
+            Ex: repeatStr("to",4); => "to to to to"</p>
+
+
+        <p> 4- Create a function called <span>sum2</span>
+            that take two parameter
+            and will return the sumation from the first number to the second number
+ <br>
+            Ex: sum2(4, 5); => 4 + 5 => 9
+            <br>
+            Ex: sum2(3, 6); => 3 + 4 + 5 + 6 => 18</p>
+    </div>
+
+    <script src="callback.js"></script>
+</body>
+
+</html>
+
